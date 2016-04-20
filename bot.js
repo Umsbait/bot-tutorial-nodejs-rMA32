@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;botRegexRules = /^\/springschedule/
       botRegexAd=/^\/work/;botRegexGTA = /^\/classchecks/; botRegexSC = /^\/google/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
-      botRegexSiege = /^\/siege/; botRegexA = /^\/finalsschedule/; botRegexB = /^\/summerschedule/;
+      botRegexSiege = /^\/siege/; botRegexA = /^\/finalsschedule/; botRegexB = /^\/summerschedule/; botJohn = /^\/john/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -27,6 +27,11 @@ function respond() {
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage(" Sebastian- 8-9853 | Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
+    this.res.end();
+  } 
+  else if(request.text && botJohn.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("www.pornhub.com");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
