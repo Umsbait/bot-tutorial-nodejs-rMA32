@@ -100,7 +100,7 @@ function respond() {
   }
   else if(request.text && botInventory.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/a/bus.miami.edu/forms/d/1PeNKgSWNm7BFzOUyDP1sVpACvYhps-slhMFcCKvmzaM/edit");
+    postMessage("https://docs.google.com/a/bus.miami.edu/forms/d/1PeNKgSWNm7BFzOUyDP1sVpACvYhps-slhMFcCKvmzaM/viewform");
     this.res.end();
   }
    else if(request.text && botRegexB.test(request.text)) {
