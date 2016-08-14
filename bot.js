@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
-      botRegexAd=/^\/work/;botRegexGTA = /^\/classchecks/; botRegexSC = /^\/google/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/work/;botRegexGTA = /^\/summerschedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/; botFallAvailability = /^\/fallavailability/;
@@ -52,7 +52,7 @@ function respond() {
   }
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://tinyurl.com/dchecks");
+    postMessage("https://docs.google.com/spreadsheets/d/1UYLmG1TVepo0cbaIVPoKvKJxtKQ7TSoGgA1QzYSZ1hU/edit?usp=sharing");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -100,7 +100,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /fallavailability /work /google /rtfm /inventory /sos /schedule /classchecks /directory /cool guy /faculty /shrug");
+    postMessage("current commands: /summerschedule /work /google /rtfm /inventory /sos /schedule /directory /cool guy /faculty /shrug");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
@@ -110,7 +110,7 @@ function respond() {
   }
    else if(request.text && botRegexB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1UYLmG1TVepo0cbaIVPoKvKJxtKQ7TSoGgA1QzYSZ1hU/edit?usp=sharing");
+    postMessage("http://tinyurl.com/fall2016SDschedule");
     this.res.end();
   }
   else if(request.text && botSOS.test(request.text)) {
