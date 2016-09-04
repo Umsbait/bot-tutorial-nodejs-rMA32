@@ -8,8 +8,12 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/;botRegexGTA = /^\/summerschedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
-      botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
-      botSOS = /^\/sos/;
+      botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/;
+      botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
+      botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
+      botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
+      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/;
+      
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -20,6 +24,53 @@ function respond() {
     postMessage(cool());
     this.res.end();
   } 
+  else if(request.text && botGoodbye.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. Instead of being lame and 
+    just writing a basic bitch customary goodbye, I have written you all personalized goodbye notes. I have spent hours making these, and
+    they will all be available through the chatbot. Type /(your name). For the rookies I didn't really get to know, I made a /rookies. For the johns, 
+    it is /red, /cuneo, and /sirius. I will miss almost all of you. Goodbye everybody.");
+    this.res.end();
+  }
+  else if(request.text && botCrystal.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, 
+    thanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this. Best of luck to you in 
+    all your future endeavors.");
+    this.res.end();
+  }
+  else if(request.text && botCuneo.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("I have to start by saying that I understand part of why you are the way you are at work after all the stress of being
+    a senior tech. However, there's still some things I will never understand. I don't know that anybody will. You definitely care a lot
+    about this job, but you really need to smoke a blunt and get laid. If you do that, I think there's still hope.");
+    this.res.end();
+  }
+  else if(request.text && botJhasir.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("First of all, fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for trying to get with 
+    everybody's mom and grandma. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you
+    stop dying so much. Oh and fuck you for calling me and asking what kind of car my sister drives, that was creepy as shit. Deep down, like
+    realllllyyyyy fucking deep down, you know I love you. But it's realllllllllllllyyyyyyyyyyyyyyyy deep down in there. =");
+    this.res.end();
+  }
+  else if(request.text && botRaj.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("I'll miss you showing up with cuban coffee yelling LET'S GET LIT. You are quite the character, and you'll always be my boy.
+    Just take care of your liver bro if there's anything left to take care of.");
+    this.res.end();
+  }
+  else if(request.text && botSam.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Don't get peppered. Again.");
+    this.res.end();
+  }
+  else if(request.text && botJorge.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("If you asked me two months ago, I'd say you were my favorite rookie ever. But damn bro stop trying to get people fired.
+    ");
+    this.res.end();
+  }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://drive.google.com/open?id=1tES5uRM7D9x2KLcG-qf8mVhFxHSMls_AggoswbnLLgA");
@@ -93,7 +144,7 @@ function respond() {
     postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
     this.res.end();
   }
-  else if(request.text && botRegexCC.test(request.text)) {
+  else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("current commands: /script /google /rtfm /inventory /sos /schedule /directory /cool guy /faculty /shrug");
     this.res.end();
