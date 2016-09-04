@@ -56,8 +56,7 @@ function respond() {
   }
   else if(request.text && botJorge.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("If you asked me two months ago, I'd say you were my favorite rookie ever. But damn bro stop trying to get people fired.
-    ");
+    postMessage("If you asked me two months ago, I'd say you were my favorite rookie ever. But damn bro stop trying to get people fired.");
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
