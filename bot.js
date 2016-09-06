@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/;botRegexGTA = /^\/summerschedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
-      botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/;
+      botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
       botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
       botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
       botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
@@ -32,6 +32,11 @@ function respond() {
   else if(request.text && botCrystal.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, hanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this");
+    this.res.end();
+  }
+  else if(request.text && botChipotle.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Chipotle Rules: Gifs are not allowed in the work chat. If a gif is posted, any technician that is not a rookie can call dibs on chipotle. The person responsible for the posting of a given gif is responsible for buying chipotle for the first person to call dibs.");
     this.res.end();
   }
   else if(request.text && botCuneo.test(request.text)) {
@@ -71,12 +76,12 @@ function respond() {
   }
   else if(request.text && botRed.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("Fuckin' pussy.");
     this.res.end();
   }
   else if(request.text && botLaurence.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("I will never forgive you for the time you ate my ENTIRE family sized bag of doritos. And licked your fingers between every handful. Even though we had plates to put the chips on. GFY http://giphy.com/gifs/mrw-men-everything-YT5PmE88Fhw64");
+    postMessage("I will never forgive you for the time you ate my ENTIRE family sized bag of doritos. And licked your fingers between every handful. Even though we had plates to put the chips on. GFY https://i.groupme.com/245x215.gif.baf0d4e1d0834376ac9499b7bf309a4b");
     this.res.end();
   }
   else if(request.text && botGrant.test(request.text)) {
@@ -106,12 +111,12 @@ function respond() {
   }
   else if(request.text && botSirius.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("#RIP https://i.groupme.com/781x735.png.6071fdb2c2534e02b69448df00aedacf");
     this.res.end();
   }
   else if(request.text && botNick.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("I see myself in you. Just remember, with great power comes great responsibility. You are destined to do great things.");
     this.res.end();
   }
   else if(request.text && botAnne.test(request.text)) {
