@@ -31,7 +31,7 @@ function respond() {
   }
   else if(request.text && botCrystal.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, hanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this");
+    postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, thanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this");
     this.res.end();
   }
   else if(request.text && botChipotle.test(request.text)) {
@@ -46,12 +46,12 @@ function respond() {
   }
   else if(request.text && botJhasir.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for trying to get with everybody's mom and grandma. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you stop dying so much. Deep down, like realllllyyyyy fucking deep down, you know I love you. But it's realllllllllllllyyyyyyyyyyyyyyyy deep down in there. =");
+    postMessage("Fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for trying to get with everybody's mom and grandma. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you stop dying so much. ");
     this.res.end();
   }
   else if(request.text && botRaj.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("I'll miss you showing up with cuban coffee yelling LET'S GET LIT. You are quite the character, and you'll always be my boy. Just take care of your liver bro if there's anything left to take care of.");
+    postMessage("I'll miss you showing up with cuban coffee yelling LET'S GET LIT. You are quite the character. Just take care of your liver if there's anything left to take care of.");
     this.res.end();
   }
   else if(request.text && botSam.test(request.text)) {
@@ -106,7 +106,7 @@ function respond() {
   }
   else if(request.text && botShadi.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("Hi, my name's Dylan");
     this.res.end();
   }
   else if(request.text && botSirius.test(request.text)) {
@@ -121,22 +121,22 @@ function respond() {
   }
   else if(request.text && botAnne.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("I haven't even worked a shift with you and you're still my favorite rookie (sorry Nick)");
     this.res.end();
   }
   else if(request.text && botSania.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("You're a fucking savage. On behalf of everybody, I thank you for everything you said to Cuneo.");
     this.res.end();
   }
   else if(request.text && botCurtis.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("Bitch. You're gonna owe someone chipotle https://i.groupme.com/500x279.gif.34747c7280cd47f9bc4c823b522bb87b");
     this.res.end();
   }
   else if(request.text && botRookies.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("All I have to say is: May the odds be ever in your favor.");
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
