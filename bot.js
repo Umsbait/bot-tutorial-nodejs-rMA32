@@ -26,12 +26,12 @@ function respond() {
   } 
   else if(request.text && botGoodbye.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. Instead of being lame and just writing a basic bitch customary goodbye, I have written you all personalized goodbye notes. I have spent hours making these, and they will all be available through the chatbot. Type /(your name). For the rookies I didn't really get to know, I made a /rookies. For the johns, it is /red, /cuneo, and /sirius. I will miss almost all of you. Goodbye everybody.");
+    postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. Instead of being lame and just writing a basic bitch customary goodbye, I have written you all personalized goodbye notes. I have spent hours making these, and they will all be available through the chatbot. Type /(your name). For the rookies I didn't really get to know, I made a /rookies. For the johns, it is /red, /cuneo, and /sirius. I will miss (almost) all of you. Goodbye everybody. I wish (almost) all of you the best.");
     this.res.end();
   }
   else if(request.text && botCrystal.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, hanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this. Best of luck to you in all your future endeavors.");
+    postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, hanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this");
     this.res.end();
   }
   else if(request.text && botCuneo.test(request.text)) {
@@ -41,7 +41,7 @@ function respond() {
   }
   else if(request.text && botJhasir.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("First of all, fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for trying to get with everybody's mom and grandma. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you stop dying so much. Oh and fuck you for calling me and asking what kind of car my sister drives, that was creepy as shit. Deep down, like realllllyyyyy fucking deep down, you know I love you. But it's realllllllllllllyyyyyyyyyyyyyyyy deep down in there. =");
+    postMessage("Fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for trying to get with everybody's mom and grandma. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you stop dying so much. Deep down, like realllllyyyyy fucking deep down, you know I love you. But it's realllllllllllllyyyyyyyyyyyyyyyy deep down in there. =");
     this.res.end();
   }
   else if(request.text && botRaj.test(request.text)) {
@@ -56,7 +56,82 @@ function respond() {
   }
   else if(request.text && botJorge.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("If you asked me two months ago, I'd say you were my favorite rookie ever. But damn bro stop trying to get people fired.");
+    postMessage("Damn bro stop trying to get people fired. It's kinda fucked up. But thanks for always being a hard worker and getting shit done.");
+    this.res.end();
+  }
+  else if(request.text && botJoe.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("So we only worked together a couple times, we didn't really get to know each other that well, but you're a cool guy. Thanks for the Ciroc on my birthday, major key.");
+    this.res.end();
+  }
+  else if(request.text && botAmanda.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botRed.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botLaurence.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("I will never forgive you for the time you ate my ENTIRE family sized bag of doritos. And licked your fingers between every handful. Even though we had plates to put the chips on. GFY http://giphy.com/gifs/mrw-men-everything-YT5PmE88Fhw64");
+    this.res.end();
+  }
+  else if(request.text && botGrant.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botElen.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botAsmaa.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botAleeza.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botShadi.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botSirius.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botNick.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botAnne.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botSania.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botCurtis.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+  else if(request.text && botRookies.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
