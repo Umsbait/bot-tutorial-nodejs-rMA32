@@ -71,7 +71,7 @@ function respond() {
   }
   else if(request.text && botAmanda.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("All of the ideas I have for you I cannot say because I have morals.");
     this.res.end();
   }
   else if(request.text && botRed.test(request.text)) {
