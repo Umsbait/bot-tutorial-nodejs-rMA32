@@ -16,7 +16,7 @@ function respond() {
       botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
       botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
       botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
-      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; 
+      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; botGrant = /^\/grant/;
       
       siege1 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'; siege2 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'
       siege3 = 'www.pornhub.com';
@@ -66,6 +66,11 @@ function respond() {
   else if(request.text && botJorge.test(request.text)) {
     this.res.writeHead(200);
     postMessage("No matter how many souls you eat, you'll still be my favorite.");
+    this.res.end();
+  }
+  else if(request.text && botGrant.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/AUgZxaP.gif");
     this.res.end();
   }
   else if(request.text && botJoe.test(request.text)) {
