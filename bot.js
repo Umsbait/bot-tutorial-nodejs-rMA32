@@ -3,6 +3,10 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
@@ -270,9 +274,7 @@ function postMessage(response) {
   botReq.end(JSON.stringify(body));
 }
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
+
 
 
 exports.respond = respond;
