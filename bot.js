@@ -153,11 +153,6 @@ function respond() {
     postMessage("www.pornhub.com");
     this.res.end();
   } 
-  else if(request.txt && botGrant.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/AUgZxaP.gif");
-    this.res.end();
-  }
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://drive.google.com/open?id=1uXQnVasUe-tytr8ZPBnv4DhEljoIRKQaXFLWkrDzRw0");
