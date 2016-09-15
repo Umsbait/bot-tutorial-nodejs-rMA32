@@ -220,11 +220,11 @@ function respond() {
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
-      postMessage(siege1);
+      postMessage("https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing");
     else if(Math.random() >0.6)
-      postMessage(siege3)
+      postMessage("https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing")
     else
-      postMessage(siege2);
+      postMessage("www.pornhub.com");
     this.res.end();
   }
   
