@@ -13,10 +13,10 @@ function respond() {
       botRegexAd=/^\/script/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/schedule/;  botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
-      botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
+      botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botGrant = /^\/grant/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
       botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
       botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
-      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; botGrant = /^\/grant/;
+      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/;
       
       siege1 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'; siege2 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'
       siege3 = 'www.pornhub.com';
@@ -115,7 +115,7 @@ function respond() {
   }
   else if(request.text && botNick.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Favorite Rookie EVer (except Anne)");
+    postMessage("Favorite Rookie Ever (except Anne)");
     this.res.end();
   }
   else if(request.text && botAnne.test(request.text)) {
