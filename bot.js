@@ -16,7 +16,7 @@ function respond() {
       botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
       botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
       botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
-      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/;
+      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; 
       
       siege1 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'; siege2 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'
       siege3 = 'www.pornhub.com';
@@ -68,11 +68,6 @@ function respond() {
     postMessage("No matter how many souls you eat, you'll still be my favorite.");
     this.res.end();
   }
-  else if(request.text && botGrant.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/AUgZxaP.gif");
-    this.res.end();
-  }
   else if(request.text && botJoe.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Thanks for the Ciroc, major key.");
@@ -115,7 +110,7 @@ function respond() {
   }
   else if(request.text && botNick.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Favorite Rookie Ever (except Anne)");
+    postMessage("Favorite Rookie EVer (except Anne)");
     this.res.end();
   }
   else if(request.text && botAnne.test(request.text)) {
@@ -158,6 +153,11 @@ function respond() {
     postMessage("www.pornhub.com");
     this.res.end();
   } 
+  else if(request.txt && botGrant.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/AUgZxaP.gif");
+    this.res.end();
+  }
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://drive.google.com/open?id=1uXQnVasUe-tytr8ZPBnv4DhEljoIRKQaXFLWkrDzRw0");
@@ -180,6 +180,7 @@ function respond() {
     postMessage("http://daddyleagues.com/ma32/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
+
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
