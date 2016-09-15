@@ -26,12 +26,12 @@ function respond() {
   } 
   else if(request.text && botGoodbye.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. Instead of being lame and just writing a basic bitch customary goodbye, I have written you all personalized goodbye notes. I have spent hours making these, and they will all be available through the chatbot. Type /(your name). For the rookies I didn't really get to know, I made a /rookies. For the johns, it is /red, /cuneo, and /sirius. I will miss (almost) all of you. Goodbye everybody. I wish (almost) all of you the best.");
+    postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. It has been a pleasure to work with (almost) all of you. I've written a select few of you personalized goodbye messages. Check and see if you're one of the lucky ones by typing /(your name). Don't feel bad if you didn't get one, it just means that I only had nice things to say about you. For the John's, it's /cuneo, /red, and /sirius");
     this.res.end();
   }
   else if(request.text && botCrystal.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Did someone say basic??? Lol I'm glad they didn't fire you to make room for Andrea. Working with you has been great, thanks for always keeping the pH above 7. Sorry for dumping all my responsibility onto you, but you got this");
+    postMessage("I'm glad they didn't fire you to make room for Andrea. Working with you has been great, thanks for always keeping the pH above 7.");
     this.res.end();
   }
   else if(request.text && botChipotle.test(request.text)) {
@@ -46,12 +46,12 @@ function respond() {
   }
   else if(request.text && botJhasir.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for trying to get with everybody's mom and grandma. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you stop dying so much. ");
+    postMessage("Fuck you. Fuck you for showing up to two Sunday shifts the entire summer. Fuck you for making my scheduling life impossible. Chill out with the drugs, take care of your body so you stop dying so much. ");
     this.res.end();
   }
   else if(request.text && botRaj.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("I'll miss you showing up with cuban coffee yelling LET'S GET LIT. You are quite the character. Just take care of your liver if there's anything left to take care of.");
+    postMessage("Even though I told you about 15 times that I put in my 2 weeks, I feel like you're probably going to call me asking if I actually quit the desk. Probably has something to do with your perpetual drunkenness. Please give your liver a break. ");
     this.res.end();
   }
   else if(request.text && botSam.test(request.text)) {
@@ -61,52 +61,42 @@ function respond() {
   }
   else if(request.text && botJorge.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Damn bro stop trying to get people fired. It's kinda fucked up. But thanks for always being a hard worker and getting shit done.");
+    postMessage("No matter how many souls you eat, you'll still be my favorite.");
     this.res.end();
   }
   else if(request.text && botJoe.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("So we only worked together a couple times, we didn't really get to know each other that well, but you're a cool guy. Thanks for the Ciroc on my birthday, major key.");
+    postMessage("Thanks for the Ciroc, major key.");
     this.res.end();
   }
   else if(request.text && botAmanda.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("Still not sure how you went from rookie to basically supervisor...");
     this.res.end();
   }
   else if(request.text && botRed.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Fuckin' pussy.");
+    postMessage("Fuckin pussy.");
     this.res.end();
   }
   else if(request.text && botLaurence.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("I will never forgive you for the time you ate my ENTIRE family sized bag of doritos. And licked your fingers between every handful. Even though we had plates to put the chips on. GFY https://i.groupme.com/245x215.gif.baf0d4e1d0834376ac9499b7bf309a4b");
-    this.res.end();
-  }
-  else if(request.text && botGrant.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("");
-    this.res.end();
-  }
-  else if(request.text && botElen.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("");
-    this.res.end();
-  }
-  else if(request.text && botAsmaa.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("");
+    postMessage("I will never forgive you for the time you ate my ENTIRE family sized bag of doritos. And licked your fingers between every handful. Even though we had plates to put the chips on. GFY. - This was going to be worse but u gave me half a bagel this morning so I'm sparing you. ");
     this.res.end();
   }
   else if(request.text && botAleeza.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.groupme.com/245x180.gif.056493d72f424da8a126f5ebbb423379");
     this.res.end();
   }
   else if(request.text && botShadi.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Hi, my name's Dylan");
+    postMessage("Hi, my name's Dylan ");
+    this.res.end();
+  }
+  else if(request.text && botAsmaa.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("So... Can I get my macbook charger back or nah");
     this.res.end();
   }
   else if(request.text && botSirius.test(request.text)) {
@@ -116,7 +106,7 @@ function respond() {
   }
   else if(request.text && botNick.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("I see myself in you. Just remember, with great power comes great responsibility. You are destined to do great things.");
+    postMessage("Favorite Rookie EVer (except Anne)");
     this.res.end();
   }
   else if(request.text && botAnne.test(request.text)) {
