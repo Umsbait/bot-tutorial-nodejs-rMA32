@@ -9,7 +9,7 @@ function getRandomInt(min, max) {
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/ ;botRegexSalt = /^\/directory/;  
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/; botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/Siege/;  botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
