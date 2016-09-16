@@ -9,14 +9,14 @@ function getRandomInt(min, max) {
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/; botRegexSalt = /^\/directory/;  
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
-      botRegexSiege = /^\/Siege/;  botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
+      botRegexSiege = /^\/schedule/;  botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
       botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
       botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
       botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
-      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; botSchedule = /^\/schedule/;
+      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; 
       
       siege1 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'; siege2 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'
       siege3 = 'www.pornhub.com';
@@ -31,11 +31,6 @@ function respond() {
   else if(request.text && botGoodbye.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. It has been a pleasure to work with (almost) all of you. I've written a select few of you personalized goodbye messages. Check and see if you're one of the lucky ones by typing /(your name). Don't feel bad if you didn't get one, it just means that I only had nice things to say about you. For the John's, it's /cuneo, /red, and /sirius");
-    this.res.end();
-  }
-  else if(request.text && botSchedule.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("  www.pornhub.com  https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing");
     this.res.end();
   }
   else if(request.text && botCrystal.test(request.text)) {
