@@ -148,11 +148,6 @@ function respond() {
     postMessage(" Sebastian- 8-9853 | Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
     this.res.end();
   } 
-  else if(request.text && botJohn.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("www.pornhub.com");
-    this.res.end();
-  } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://drive.google.com/open?id=1uXQnVasUe-tytr8ZPBnv4DhEljoIRKQaXFLWkrDzRw0");
