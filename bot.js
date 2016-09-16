@@ -9,14 +9,14 @@ function getRandomInt(min, max) {
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/; botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
-      botRegexSiege = /^\/schedule/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
+      botRegexSiege = /^\/Siege/;  botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/; botSOS = /^\/sos/; botChipotle = /^\/chipotle/;
       botGoodbye = /^\/goodbye/; botCrystal = /^\/crystal/; botCuneo = /^\/cuneo/; botJhasir = /^\/jhasir/; botRaj = /^\/Raj/; botSam = /^\/sam/;
       botJorge = /^\/jorge/; botJoe = /^\/joe/; botAmanda = /^\/amanda/; botRed = /^\/red/; botLaurence = /^\/laurence/; botGrant = /^\/grant/;
-      botElen = /^\/elen/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
-      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; 
+      botElen = /^\/elen/; botAsmaa = /^\/asmaa/; botAleeza = /^\/aleeza/; botShadi = /^\/shadi/; botSirius = /^\/sirius/; botNick = /^\/nick/;
+      botAnne = /^\/anne/; botSania = /^\/sania/; botRookies = /^\/rookies/; botCurtis = /^\/curtis/; botSchedule = /^\/schedule/;
       
       siege1 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'; siege2 = 'https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing'
       siege3 = 'www.pornhub.com';
@@ -31,6 +31,11 @@ function respond() {
   else if(request.text && botGoodbye.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Hello everybody. After almost 2 years working here, it has come time for me to say goodbye. It has been a pleasure to work with (almost) all of you. I've written a select few of you personalized goodbye messages. Check and see if you're one of the lucky ones by typing /(your name). Don't feel bad if you didn't get one, it just means that I only had nice things to say about you. For the John's, it's /cuneo, /red, and /sirius");
+    this.res.end();
+  }
+  else if(request.text && botSchedule.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("  www.pornhub.com  https://docs.google.com/spreadsheets/d/18iRpPrKKnwTbrioxfUV3zSMtWveQBZlCMGJ6PGt5Xe8/edit?usp=sharing");
     this.res.end();
   }
   else if(request.text && botCrystal.test(request.text)) {
@@ -98,6 +103,11 @@ function respond() {
     postMessage("Hi, my name's Dylan ");
     this.res.end();
   }
+  else if(request.text && botAsmaa.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("So... Can I get my macbook charger back or nah");
+    this.res.end();
+  }
   else if(request.text && botSirius.test(request.text)) {
     this.res.writeHead(200);
     postMessage("#RIP https://i.groupme.com/781x735.png.6071fdb2c2534e02b69448df00aedacf");
@@ -141,6 +151,11 @@ function respond() {
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage(" Sebastian- 8-9853 | Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
+    this.res.end();
+  } 
+  else if(request.text && botJohn.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("www.pornhub.com");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
