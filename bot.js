@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
-      botRegexAd=/^\/script/;botRegexGTA = /^\/summerschedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botJohn = /^\/john/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/;
@@ -47,7 +47,7 @@ function respond() {
   }
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1UYLmG1TVepo0cbaIVPoKvKJxtKQ7TSoGgA1QzYSZ1hU/edit?usp=sharing");
+    postMessage("https://67.media.tumblr.com/e5fb1821fa279144ad23fc8db540930e/tumblr_n2f0uczU251ru5h8co1_500.gif");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
