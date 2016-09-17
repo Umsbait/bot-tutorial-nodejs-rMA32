@@ -37,8 +37,7 @@ function respond() {
   } 
   else if(request.text && botPdrive.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Windows: 10.39.5.237\servicedesk$\p 
-    Mac: smb://10.39.5.237/servicedesk$/p");
+    postMessage("Windows: 10.39.5.237\servicedesk$\p Mac: smb://10.39.5.237/servicedesk$/p");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
