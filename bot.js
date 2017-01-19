@@ -79,7 +79,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Current Commands: /pdrive /tickets /script /google /rtfm /inventory /sos /schedule /directory /cool guy /faculty /shrug");
+    postMessage("Current Commands: /pdrive /tickets /script /google /rtfm /inventory /sos /schedule /directory /faculty /shrug");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
