@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexDL = /^\/RTFM/i; botRegexSalt = /^\/directory/;  
-      botRegexAd=/^\/script/; botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
+      botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/;
@@ -79,7 +79,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Current Commands: /pdrive /tickets /script /google /rtfm /inventory /sos /schedule /directory /faculty /shrug");
+    postMessage("current commands: /tickets /script /google /rtfm /inventory /sos /schedule /directory /cool guy /faculty /shrug");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
