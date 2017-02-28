@@ -89,7 +89,7 @@ function respond() {
   }
    else if(request.text && botRegexB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://tinyurl.com/fall2016SDschedule");
+    postMessage("https://tinyurl.com/SBASD-Schedule");
     this.res.end();
   }
   else if(request.text && botSOS.test(request.text)) {
