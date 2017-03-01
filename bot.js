@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
-      botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
+      botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botHeheXD = /^\/confused/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/; botRegexP = /^\/cashme/;
@@ -54,7 +54,11 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://bfy.tw/NF");
     this.res.end();
-
+  } 
+  else if(request.text && botHeheXD.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/676x382.jpeg.cc9dcc226fd94a38a536f7bdfe2e2ae7.large");
+    this.res.end();
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
@@ -79,7 +83,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /tickets /script /google /rtfm /inventory /sos /cashme /schedule /directory /cool guy /faculty /shrug");
+    postMessage("current commands: /tickets /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /cool guy /faculty /shrug");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
