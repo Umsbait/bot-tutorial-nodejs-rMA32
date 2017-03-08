@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i;botRegexSalt = /^\/directory/;  
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i; botRegeWeed = /^\/classchecks/; botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botRegeHeheXD = /^\/confused/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
@@ -80,10 +80,15 @@ function respond() {
     postMessage("OBJ*");
     this.res.end();
 
+    }
+  else if(request.text && botRegeWeed.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://tinyurl.com/SBA-ClassCheck");
+    this.res.end();
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /tickets /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /cool guy /faculty /shrug");
+    postMessage("current commands: /tickets /classchecks /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /cool guy /faculty /shrug");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
