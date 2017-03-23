@@ -40,7 +40,7 @@ function respond() {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
       postMessage(google1);
-    else if(Math.random() >0.3)
+    else if(Math.random() >0.6)
       postMessage(google3)
     else if(Math.random() >0.3)
       postMessage(google4)
