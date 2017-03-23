@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i; botRegeWeed = /^\/classchecks/; botRegexSalt = /^\/directory/;  
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i; botRegeMolly = /^\/google; botRegeWeed = /^\/classchecks/; botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegexSC = /^\/google/; botRegeHeheXD = /^\/confused/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
@@ -33,6 +33,11 @@ function respond() {
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage(" Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
+    this.res.end();
+  } 
+    else if(request.text && botRegeMolly.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://lmgtfy.com");
     this.res.end();
   } 
   else if(request.text && botPdrive.test(request.text)) {
