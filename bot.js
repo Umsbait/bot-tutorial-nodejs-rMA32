@@ -37,7 +37,7 @@ function respond() {
   } 
   else if(request.text && botRegeMolly.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://lmgtfy.com/?q=Should+I+be+fired%3F");
+    postMessage("http://bfy.tw/AoZK");
     this.res.end();
   } 
   else if(request.text && botPdrive.test(request.text)) {
