@@ -12,6 +12,7 @@ function respond() {
       botSOS = /^\/sos/; botRegexP = /^\/cashme/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
+      google1 = 'http://bfy.tw/AoZK'; google2 = 'http://bfy.tw/3won'; google3 = 'http://bfy.tw/Aoak'; google4 = 'http://bfy.tw/AobV';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -35,11 +36,18 @@ function respond() {
     postMessage(" Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
     this.res.end();
   } 
-  else if(request.text && botRegeMolly.test(request.text)) {
+  else if(request.text && botRegexMolly.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://bfy.tw/AoZK");
+    if(0.6 >= Math.random() > 0.3)
+      postMessage(google1);
+    else if(Math.random() >0.3)
+      postMessage(google3)
+    else if(Math.random() >0.3)
+      postMessage(google4)
+    else
+      postMessage(google2);
     this.res.end();
-  } 
+  }
   else if(request.text && botPdrive.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Windows: \\\\10.39.5.237\\servicedesk$\\p | Mac: smb://10.39.5.237/servicedesk$/p");
