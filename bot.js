@@ -94,7 +94,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /tickets /classchecks /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /cool guy /faculty /shrug");
+    postMessage("current commands: /stvote /tickets /classchecks /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /cool guy /faculty /shrug");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
