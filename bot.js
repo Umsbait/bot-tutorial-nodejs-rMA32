@@ -33,7 +33,7 @@ function respond() {
   }
     else if(request.text && botRegexPercocet.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://bit.ly/2qfmeTM");
+    postMessage("http://bit.ly/2qnQPLs");
     this.res.end();
   }
   else if(request.text && botRegexSalt.test(request.text)) {
