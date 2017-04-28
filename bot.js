@@ -63,7 +63,7 @@ function respond() {
   }
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/190x218.gif.a5f512127441446aa1e821a3acb27e03.large");
+    postMessage("https://i.groupme.com/190x218.gif.a5f512127441446aa1e821a3acb27e03");
     this.res.end();
   } 
   else if(request.text && botRegeHeheXD.test(request.text)) {
