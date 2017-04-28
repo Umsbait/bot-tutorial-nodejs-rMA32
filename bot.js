@@ -33,7 +33,7 @@ function respond() {
   }
     else if(request.text && botRegexPercocet.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://drive.google.com/a/bus.miami.edu/file/d/0B5JhXcgmXyMZQU9idUpxQVhTRXc/view?usp=sharing");
+    postMessage("http://bit.ly/2qfmeTM");
     this.res.end();
   }
   else if(request.text && botRegexSalt.test(request.text)) {
