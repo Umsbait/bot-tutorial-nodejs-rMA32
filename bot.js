@@ -27,7 +27,7 @@ function respond() {
     this.res.end();
   }
   else if(request.text && botRegexVillager.test(request.text)) {
-    this.res.writeHEad(200);
+    this.res.writeHead(200);
     postMessage("https://docs.google.com/a/bus.miami.edu/forms/d/e/1FAIpQLSeAiPR9wlQqQm9BHEJFMgAH3SONhmGmvct3qfj_mkxqLRIBvg/viewform");
     this.res.end();
   } 
