@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i; botRegexMolly = /^\/google/; botRegexPercocet = /^\/internetconfig/; botRegeWeed = /^\/classchecks/; botRegexSalt = /^\/directory/;  
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i; botRegexMolly = /^\/google/; botRegexVillager = /^\/survey/; botRegexPercocet = /^\/internetconfig/; botRegeWeed = /^\/classchecks/; botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegeHeheXD = /^\/confused/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
@@ -24,6 +24,11 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://drive.google.com/open?id=1tES5uRM7D9x2KLcG-qf8mVhFxHSMls_AggoswbnLLgA");
+    this.res.end();
+  }
+  else if(request.text && botRegexVillager.test(request.text)) {
+    this.res.writeHEad(200);
+    postMessage("https://docs.google.com/a/bus.miami.edu/forms/d/e/1FAIpQLSeAiPR9wlQqQm9BHEJFMgAH3SONhmGmvct3qfj_mkxqLRIBvg/viewform");
     this.res.end();
   } 
   else if(request.text && botFaculty.test(request.text)) {
