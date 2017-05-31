@@ -114,7 +114,7 @@ function respond() {
   }
    else if(request.text && botRegexB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://tinyurl.com/Schedule-SD");
+    postMessage("https://docs.google.com/spreadsheets/d/1FuJNUD8HDPpFhJIpqPcyZ0AQrSmRieqMtDdDgvp1LrU/edit?usp=sharing");
     this.res.end();
   }
   else if(request.text && botSOS.test(request.text)) {
