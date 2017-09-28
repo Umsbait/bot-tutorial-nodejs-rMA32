@@ -49,7 +49,7 @@ function respond() {
   }
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(" Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | Facilities 8-8282 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
+    postMessage(" Hojo 8-9416 | Steve- 8-5449 | Erick 8-2416 | Eliot 8-3606 | Facilities 8-8282 | May Peralta 8-5938 | Events (Maria Otero) 8-2362 | Blackboard 8-3949 |");
     this.res.end();
   } 
   else if(request.text && botRegexMolly.test(request.text)) {
@@ -110,7 +110,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /internetconfig /tickets /classchecks /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /faculty");
+    postMessage("current commands: /avfrom /internetconfig /tickets /classchecks /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /faculty");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
