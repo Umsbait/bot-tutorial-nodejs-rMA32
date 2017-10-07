@@ -135,7 +135,7 @@ function respond() {
   }
   
   else if(request.text && botRegexL.test(request.text)) {
-    var random = (Math.random()*5));
+    var random = (Math.random()*5);
     
     if(random < 1){
     this.res.writeHead(200);
