@@ -135,9 +135,37 @@ function respond() {
   }
   
   else if(request.text && botRegexL.test(request.text)) {
+    var random = Math.floor(Math.random() * 5) + 1;
+    
+    if(random = 1){
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/320x179.gif.e9997f914ca24b63953436a3c4a37663");
     this.res.end();
+    }
+    
+    if(random = 2){
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/202x205.gif.cc6470e780a544cfae0afd83a6d2652d");
+    this.res.end();
+    }
+    
+    else if(random = 3){
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/320x320.gif.82fd160575b844ee980b152baf2ee1a7");
+    this.res.end();
+    }
+    
+    else if(random = 4){
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/338x200.gif.23c600a536464b8bb75c5acd1f42817e");
+    this.res.end();
+    }
+    
+    else if(random = 5){
+    this.res.writeHead(200);
+    postMessage("https://pbs.twimg.com/media/C4bu-X5UEAAuN-N.jpg");
+    this.res.end();
+    }
   }
   
   else if(request.text && botRegexpooj.test(request.text)) {
