@@ -135,7 +135,7 @@ function respond() {
   }
   
   else if(request.text && botRegexL.test(request.text)) {
-    var random = Math.floor(Math.random() * 5) + 1;
+    var random = Math.floor((Math.random()*5) + 1);
     
     if(random = 1){
     this.res.writeHead(200);
@@ -143,7 +143,7 @@ function respond() {
     this.res.end();
     }
     
-    if(random = 2){
+    else if(random = 2){
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/202x205.gif.cc6470e780a544cfae0afd83a6d2652d");
     this.res.end();
