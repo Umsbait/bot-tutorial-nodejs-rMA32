@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegeHeheXD = /^\/confused/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
-      botSOS = /^\/sos/; botRegexP = /^\/cashme/;
+      botSOS = /^\/sos/; botRegexP = /^\/cashme/; botRegexL = /^\/L/;
       botAVForm = /^\/avform/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7';
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd'; google1 = 'http://bfy.tw/AoZK'; google2 = 'http://bfy.tw/3won';
@@ -131,6 +131,12 @@ function respond() {
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/1126x498.png.ab7ca4f5d1f949cd81bbea1f5f36ffd6.large");
+    this.res.end();
+  }
+  
+  else if(request.text && botRegexL.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/320x179.gif.e9997f914ca24b63953436a3c4a37663");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
