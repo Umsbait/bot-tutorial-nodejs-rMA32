@@ -110,7 +110,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("current commands: /avfrom /internetconfig /tickets /classchecks /script /google /rtfm /inventory /sos /cashme /confused /schedule /directory /faculty /L");
+    postMessage("https://i.groupme.com/1280x720.jpeg.3918a0a007604a22b9fd77c5b774da60");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
