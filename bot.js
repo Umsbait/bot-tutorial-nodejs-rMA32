@@ -135,7 +135,7 @@ function respond() {
   }
   
   else if(request.text && botRegexL.test(request.text)) {
-    var random = (Math.random()*5);
+    var random = (Math.random()*6);
     
     if(random < 1){
     this.res.writeHead(200);
@@ -164,6 +164,12 @@ function respond() {
     else if(random < 5){
     this.res.writeHead(200);
     postMessage("https://pbs.twimg.com/media/C4bu-X5UEAAuN-N.jpg");
+    this.res.end();
+    }
+    
+    else if(random < 6){
+    this.res.writeHead(200);
+    postMessage("https://imgur.com/0iINB2w");
     this.res.end();
     }
   }
