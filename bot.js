@@ -11,6 +11,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/; botRegexP = /^\/cashme/; botRegexL = /^\/L/; botRegexpeach = /^\/peaches/;
       botAVForm = /^\/avform/;
+      botBBC=/^\/bbc/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7';
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd'; google1 = 'http://bfy.tw/AoZK'; google2 = 'http://bfy.tw/3won';
       google3 = 'http://bfy.tw/AobV'; 
@@ -179,7 +180,11 @@ function respond() {
     postMessage("/L");
     this.res.end();
   }
-  
+  else if(request.text && botBBC.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://drive.google.com/open?id=0B3AZyDJLKCJRNFR6MFZLbUxISGs");
+    this.res.end();
+  }
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
