@@ -175,7 +175,7 @@ function respond() {
     
     else if(random < 6){
     this.res.writeHead(200);
-    postMessage("https://imgur.com/0iINB2w");
+    postMessage("http://gph.is/1EfZE8T");
     this.res.end();
     }
   }
