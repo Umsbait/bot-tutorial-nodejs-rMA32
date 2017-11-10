@@ -175,7 +175,7 @@ function respond() {
     
     else if(random < 6){
     this.res.writeHead(200);
-    postMessage("http://gph.is/1EfZE8T");
+    postMessage("https://media.giphy.com/media/3o85xnoIXebk3xYx4Q/giphy.gif");
     this.res.end();
     }
   }
