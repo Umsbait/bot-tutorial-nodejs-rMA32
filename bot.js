@@ -30,7 +30,7 @@ function respond() {
   }
   else if(request.text && botHelp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("When typing a command, use a '/' instead of a dash"/n);
+    postMessage("When typing a command, use a '/' instead of a dash");
    // postMessage("The following [useful] commands are as follows:"/n);
    // postMessage("-google, -script, -schedule, -spring, -users, -pdrive, -faculty, -inventory, -internetconfig, -directory, -avform, -HDForm"/n);
     this.res.end();
