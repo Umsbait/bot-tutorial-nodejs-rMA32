@@ -10,7 +10,7 @@ function respond() {
       botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/; botRegexP = /^\/cashme/; botRegexL = /^\/L/; botRegexPooja = /^\/pooja/;
-      botAVForm = /^\/avform/; botBibu = /^\/bibush/; botHDForm = /^\/HDForm/;botWinS = /^\/Winter/;
+      botAVForm = /^\/avform/; botBibu = /^\/bibush/; botHDForm = /^\/HDForm/;botSpringS = /^\/Spring/;botHelp= /^\/help/;
       botBBC=/^\/bbc/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7';
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd'; google1 = 'http://bfy.tw/AoZK'; google2 = 'http://bfy.tw/3won';
@@ -26,6 +26,13 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://drive.google.com/open?id=1tES5uRM7D9x2KLcG-qf8mVhFxHSMls_AggoswbnLLgA");
+    this.res.end();
+  }
+  else if(request.text && botHelp.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("When typing a command, use a '/' instead of a dash"/n);
+    postMessage("The following [useful] commands are as follows:"/n);
+    postMessage("-google, -script, -schedule, -spring, -users, -pdrive, -faculty, -inventory, -internetconfig, -directory, -avform, -HDForm"/n);
     this.res.end();
   }
   else if(request.text && botRegexVillager.test(request.text)) {
@@ -126,7 +133,7 @@ function respond() {
   }
    else if(request.text && botRegexB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://tinyurl.com/SBAIT-F17");
+    postMessage("https://tinyurl.com/SDWin17");
     this.res.end();
   }
   else if(request.text && botSOS.test(request.text)) {
@@ -186,9 +193,9 @@ function respond() {
     this.res.end();
   }
   
-  else if(request.text && botWinS.test(request.text)) {
+  else if(request.text && botSpringS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://tinyurl.com/SDWin17");
+    postMessage("https://78.media.tumblr.com/tumblr_m9gch6a3hh1r3tbvoo1_500.gif");
     this.res.end();
   }
   else if(request.text && botBBC.test(request.text)) {
