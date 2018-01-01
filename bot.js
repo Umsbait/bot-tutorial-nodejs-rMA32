@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/RTFM/i; botRegexMolly = /^\/google/; botRegexVillager = /^\/survey/; botRegexPercocet = /^\/internetconfig/; botRegeWeed = /^\/classchecks/; botRegexSalt = /^\/directory/;  
       botRegexAd=/^\/script/;botRegexGTA = /^\\schedule/; botRegeHeheXD = /^\/confused/; botODB = /(.*\s+)(.*odb)(\s+.*)/i;
-      botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/help/;
+      botRegexSb = /^\/tickets/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/;
       botRegexSiege = /^\/siege/; botRegexB = /^\/schedule/; botPdrive = /^\/pdrive/; botFaculty = /^\/faculty/; botInventory = /^\/inventory/;
       botSOS = /^\/sos/; botRegexP = /^\/cashme/; botRegexL = /^\/L/; botRegexPooja = /^\/pooja/;
       botAVForm = /^\/avform/; botBibu = /^\/bibush/; botHDForm = /^\/HDForm/;botSpringS = /^\/Spring/;botHelp= /^\/help/;
@@ -119,11 +119,6 @@ function respond() {
   else if(request.text && botRegeWeed.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://tinyurl.com/SBA-ClassCheck");
-    this.res.end();
-  }
-  else if(request.text && botRegexCC.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1280x720.jpeg.3918a0a007604a22b9fd77c5b774da60");
     this.res.end();
   }
   else if(request.text && botInventory.test(request.text)) {
