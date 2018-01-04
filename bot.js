@@ -189,7 +189,7 @@ function respond() {
   
   else if(request.text && botSpringS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://78.media.tumblr.com/tumblr_m9gch6a3hh1r3tbvoo1_500.gif");
+    postMessage("https://tinyurl.com/SBA-S18");
     this.res.end();
   }
   else if(request.text && botWinter.test(request.text)) {
