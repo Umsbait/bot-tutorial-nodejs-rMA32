@@ -29,7 +29,7 @@ function respond() {
     postMessage("https://drive.google.com/open?id=1tES5uRM7D9x2KLcG-qf8mVhFxHSMls_AggoswbnLLgA");
     this.res.end();
   }
-  else if (request.text && (botCentral.test(request.text) || botcentral2.test(request.text)) {
+  else if (request.text && (botCentral.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/Oxs3Em6.jpg");
     this.res.end();
