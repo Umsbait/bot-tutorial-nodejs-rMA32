@@ -133,7 +133,7 @@ function respond() {
   }
    else if(request.text && botRegexB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://tinyurl.com/SDWin17");
+    postMessage("https://tinyurl.com/SBA-S18");
     this.res.end();
   }
   else if(request.text && botSOS.test(request.text)) {
@@ -195,7 +195,7 @@ function respond() {
   
   else if(request.text && botSpringS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://tinyurl.com/SBA-S18");
+    postMessage("https://imgur.com/6bHvqVZ");
     this.res.end();
   }
   else if(request.text && botWinter.test(request.text)) {
